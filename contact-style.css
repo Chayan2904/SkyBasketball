@@ -1,0 +1,118 @@
+/* Contact Page Specific Styles */
+
+/* Contact Section */
+.contact-section {
+    background-color: rgba(255, 255, 255, 0.95);
+    margin: 40px 20px;
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-container h2 {
+    color: rgb(102, 185, 255);
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container > p {
+    color: #000000;
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.contact-card {
+    background: linear-gradient(135deg, rgba(102, 185, 255, 0.1), rgba(255, 255, 255, 0.9));
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.contact-card h3 {
+    color: rgb(102, 185, 255);
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.contact-card p {
+    color: #000000;
+    line-height: 1.6;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.email-link {
+    display: inline-block;
+    background: linear-gradient(135deg, rgb(102, 185, 255), rgb(70, 150, 220));
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(102, 185, 255, 0.3);
+}
+
+.email-link:hover {
+    background: linear-gradient(135deg, rgb(70, 150, 220), rgb(102, 185, 255));
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 185, 255, 0.4);
+}
+
+/* Responsive Design for Contact Page */
+@media (max-width: 768px) {
+    .contact-info {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .contact-container h2 {
+        font-size: 2em;
+    }
+    
+    .contact-card {
+        padding: 20px;
+    }
+    
+    .email-link {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-section {
+        margin: 20px 10px;
+        padding: 25px;
+    }
+    
+    .contact-container h2 {
+        font-size: 1.8em;
+    }
+    
+    .contact-container > p {
+        font-size: 1.1em;
+    }
+}
